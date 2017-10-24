@@ -1,5 +1,14 @@
 {
+    "name": "piotrpasich/cryptocurrency",
     "require": {
         "phpspec/phpspec": "^4.1"
-    }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Piotr Pasich",
+            "email": "piotr.pasich@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev"
 }
