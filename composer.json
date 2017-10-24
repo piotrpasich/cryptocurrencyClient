@@ -1,7 +1,8 @@
 {
     "name": "piotrpasich/cryptocurrency",
     "require": {
-        "phpspec/phpspec": "^4.1"
+        "phpspec/phpspec": "^4.1",
+        "jsonrpc/jsonrpc": "^1.0"
     },
     "license": "MIT",
     "authors": [
@@ -10,5 +11,10 @@
             "email": "piotr.pasich@gmail.com"
         }
     ],
+    "autoload" : {
+        "psr-4" : {
+            "": ["src"]
+        }
+    },
     "minimum-stability": "dev"
 }
