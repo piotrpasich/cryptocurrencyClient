@@ -24,6 +24,13 @@ Please go though the following installation guide to setup the btcd and btcctl c
 https://github.com/btcsuite/btcd/blob/master/docs/README.md#PosixInstallation
 
 
+```
+./btcd --simnet --rpcuser=myuser --rpcpass=SomeDecentp4ssw0rd --miningaddr=SQ8DBqgNvz5mV3XYvNqog1UP6DGXu6S3cM
+./btcwallet -u myuser -P SomeDecentp4ssw0rd --simnet --create
+./btcwallet -u myuser -P SomeDecentp4ssw0rd --simnet
+
+```
+
 ##External sources
 
 This repository uses external applications from 
