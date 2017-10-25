@@ -2,7 +2,7 @@
     "name": "piotrpasich/cryptocurrency",
     "require": {
         "phpspec/phpspec": "^4.1",
-        "jsonrpc/jsonrpc": "^1.0"
+        "fguillot/json-rpc": "^1.2"
     },
     "license": "MIT",
     "authors": [

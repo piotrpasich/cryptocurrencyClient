@@ -10,13 +10,15 @@ class BtcConfig implements Config
     protected $port = '18556';
     protected $rpcUser = 'myuser';
     protected $rpcPass = 'SomeDecentp4ssw0rd';
+    protected $cafile = '/home/papi/.btcwallet/rpc.cert';
 
-    public function __construct($host = null, $port = null, $rpcUser = null, $rpcPass=null)
+    public function __construct($host = null, $port = null, $rpcUser = null, $rpcPass = null, $cafile = null)
     {
         $this->host = $host ?: $this->host;
         $this->port = $port ?: $this->port;
         $this->rpcUser = $rpcUser ?: $this->rpcUser;
         $this->rpcPass = $rpcPass ?: $this->rpcPass;
+        $this->cafile = $cafile;
     }
 
     public function getHost()
@@ -37,5 +39,10 @@ class BtcConfig implements Config
     public function getRpcPass()
     {
         return $this->rpcPass;
+    }
+
+    public function getCafile()
+    {
+        return $this->cafile;
     }
 }
